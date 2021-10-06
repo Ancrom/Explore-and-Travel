@@ -74,7 +74,7 @@ h6 {
 	font-weight: 400;
 }
 
-/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
 
 ._container {
 	max-width: 1150px;
@@ -93,7 +93,7 @@ h6 {
 	flex-direction: column;
 }
 
-/* -------ШАПКА---------------------------------------------------- */
+/* -------ШАПКА------------------------------------------------------------------- */
 
 .header {
 }
@@ -158,13 +158,18 @@ h6 {
 	color: #fff;
 }
 
-/* -------ЭКШЕНС------------------------------------------------------- */
+/* -------ЭКШЕНС---------------------------------------------------------------- */
 
+.finder-container {
+	position: relative;
+	width: 1250px;
+	margin-top: 71px;
+}
 .actions {
-	width: 50%;
+	width: 45%;
 }
 .finder__title {
-	font-family: Playfair Display;
+	font-family: "Playfair Display";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 64px;
@@ -186,6 +191,7 @@ h6 {
 .select__container {
 	display: flex;
 	flex-flow: row wrap;
+	position: relative; 
 }
 select {
 	display: inline-block;
@@ -196,8 +202,6 @@ select {
 	width: 220px;
 	-webkit-appearance: none;
 	padding: 0 0 0 31px;
-}
-.select__item {
 	margin: 0 30px 35px 0;
 }
 .select-location {
@@ -211,6 +215,9 @@ select {
 .button {
 }
 .eat-img {
+	position: absolute;
+	top: -33px;
+	right: -70px;
 }
 .btn-finder {
 	margin: 15px 0;
@@ -218,7 +225,7 @@ select {
 	width: 180px;
 }
 
-/* -------МЕДИА----------------------------------------------------- */
+/* -------МЕДИА------------------------------------------------------------------- */
 
 @media all and (max-width: 786px) {
 	.menu__button {
