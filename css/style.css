@@ -1,0 +1,241 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: inter, mulish, sans-serif;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/* ---------------------------------------------------------------- */
+
+._container {
+	max-width: 1150px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.container-big {
+	max-width: 1250px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* -------ШАПКА---------------------------------------------------- */
+
+.header {
+}
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	padding: 0 35px 0 0;
+}
+.header__menu {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+.menu__list {
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	width: fit-content;
+}
+.menu__item {
+	line-height: 20px;
+	padding: 0 35px 0 0;
+}
+.menu__item a {
+	color: #b8becd;
+}
+.menu__item a:hover {
+	color: #000;
+}
+.menu__buttons-container {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-end;
+}
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 44px;
+	width: 132px;
+	border: 1px solid #fb8f1d;
+	border-radius: 8px;
+	color: #fff;
+	background-color: #fb8f1d;
+	margin: 15px 7px;
+}
+.button:hover {
+	background-color: #1abe84;
+	border: #1abe84;
+}
+.btn-login {
+	background-color: #fff;
+	color: #fb8f1d;
+}
+.btn-login:hover {
+	background-color: #1abe84;
+	border: #1abe84;
+	color: #fff;
+}
+
+/* -------ЭКШЕНС------------------------------------------------------- */
+
+.actions {
+	width: 50%;
+}
+.finder__title {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 80px;
+	margin: 0 0 75px 0;
+}
+.finder__subtitle {
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 27px;
+	margin: 0 0 21px 0;
+}
+.line {
+	width: 32px;
+	height: 2px;
+	background-color: #000;
+	margin: 0 0 48px 0;
+}
+.select__container {
+	display: flex;
+	flex-flow: row wrap;
+}
+select {
+	display: inline-block;
+	background: center right 10% no-repeat url(/img/select-arrow.svg);
+	border: 0.8px solid #AFB0B9;
+	border-radius: 6px;
+	height: 52px;
+	width: 220px;
+	-webkit-appearance: none;
+	padding: 0 0 0 31px;
+}
+.select__item {
+	margin: 0 30px 35px 0;
+}
+.select-location {
+}
+.select-activity {
+}
+.select-grade {
+}
+.select-date {
+}
+.button {
+}
+.eat-img {
+}
+.btn-finder {
+	margin: 15px 0;
+	height: 52px;
+	width: 180px;
+}
+
+/* -------МЕДИА----------------------------------------------------- */
+
+@media all and (max-width: 786px) {
+	.menu__button {
+		margin: 7px;
+	}
+}
+@media all and (max-width: 360px) {
+	.container-big {
+		padding: 0 5px;
+	}
+
+	/* ------------------------- */
+
+	.logo {
+		padding: 0 10px 0 0;
+	}
+	.menu__item {
+		padding: 0 10px 0 0;
+	}
+}
