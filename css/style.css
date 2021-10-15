@@ -133,7 +133,7 @@ h6 {
 	justify-content: flex-end;
 }
 .button {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	height: 44px;
@@ -161,11 +161,12 @@ h6 {
 /* -------ЭКШЕНС---------------------------------------------------------------- */
 
 .finder-container {
-	position: relative;
+	display: flex;
 	width: 1250px;
 	margin-top: 71px;
 }
 .actions {
+	position: relative;
 	width: 45%;
 }
 .finder__title {
@@ -212,17 +213,77 @@ select {
 }
 .select-date {
 }
+.select-mr0 {
+	margin-right: 0;
+}
 .button {
 }
-.eat-img {
+.plus-circle-eat {
+	position: relative;
+}
+.plus-finder {
 	position: absolute;
-	top: -33px;
-	right: -70px;
+	top: 0;
+	left: 0;
+	transform: translate(0, 15px);
+}
+.circle-finder {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translate(50px, -50px);
+}
+.eat-img {
+	transform: translate(85px);
 }
 .btn-finder {
 	margin: 15px 0;
 	height: 52px;
 	width: 180px;
+}
+
+/* --------ХИРО-------------------------------------------------------------------- */
+
+.hero {
+	margin: 270px 0 0 0;
+}
+.container-hero {
+	display: flex;
+	position: relative;
+}
+.hero-img {
+	transform: translate(-25px);
+}
+.plus-hero-img {
+	display: block;
+	height: fit-content;
+	margin: 0 54px 0 26px;
+}
+.hero__box {
+	display: flex;
+	flex-flow: column nowrap;
+	align-self: center;
+}
+.hero__title {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 50px;
+}
+.hero__content {
+	margin: 20px 0 33px 0;
+	font-family: mulish;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 30px;
+	color: #7D7987;
+}
+.btn-learn {
+	width: 164px;
+	height: 48px;
+	margin: 0;
 }
 
 /* -------МЕДИА------------------------------------------------------------------- */
@@ -236,9 +297,7 @@ select {
 	.container-big {
 		padding: 0 5px;
 	}
-
-	/* ------------------------- */
-
+	/* ---------- */
 	.logo {
 		padding: 0 10px 0 0;
 	}

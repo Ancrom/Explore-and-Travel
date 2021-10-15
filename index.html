@@ -22,7 +22,7 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header-container container-big">
+        <div class="container-big header-container">
           <a><img class="logo" src="img/logo.svg" alt="Logo" /></a>
           <nav class="header__menu">
             <ul class="menu__list">
@@ -32,8 +32,8 @@
               <li class="menu__item"><a href="#">Partner</a></li>
             </ul>
             <div class="menu__buttons-container">
-              <a href="#" class="button btn-login">Login</a>
-              <a href="#" class="button btn-register">Register</a>
+              <a class="button btn-login" href="#">Login</a>
+              <a class="button btn-register" href="#" >Register</a>
             </div>
           </nav>
         </div>
@@ -55,7 +55,7 @@
                     </select>
                   </div>
                   <div class="select__item select-activity">
-                    <select name="activity">
+                    <select class="select-mr0" name="activity">
                       <option value="activity1">Activity</option>
                       <option value="activity2">Activity2</option>
                       <option value="activity3">Activity3</option>
@@ -69,7 +69,7 @@
                     </select>
                   </div>
                   <div class="select__item select-date">
-                    <select name="date">
+                    <select class="select-mr0" name="date">
                       <option value="date1">Date</option>
                       <option value="date2">Date2</option>
                       <option value="date3">Date3</option>
@@ -79,11 +79,42 @@
               </form>
               <a href="#" class="button btn-finder">Explore</a>
             </div>
+            <div class="plus-circle-eat">
+              <img
+                class="plus-img plus-finder"
+                src="img/plus-finder.svg"
+                alt="Plus image"
+              />
+              <img class="circle-finder" src="img/circleb.svg" alt="" />
+              <img
+                class="eat-img"
+                src="img/exp-and-tra.png"
+                alt="Explore and Travel img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero">
+        <div class="wrapper">
+          <div class="container-big container-hero">
+            <img class="hero-img" src="img/hero.png" alt="hero image" />
             <img
-              class="eat-img"
-              src="img/exp-and-tra.png"
-              alt="Explore and Travel img"
+              class="plus-hero-img"
+              src="img/plus-hero.svg"
+              alt="hero plus image"
             />
+            <div class="hero__box">
+              <h2 class="hero__title">
+                A&nbsp;new way to&nbsp;explore the world
+              </h2>
+              <p class="hero__content">
+                For decades travellers have reached for Lonely Planet books when
+                looking to&nbsp;plan and execute their perfect trip, but now,
+                they can also let Lonely Planet Experiences lead the way
+              </p>
+              <a class="button btn-learn" href="#">Learn more</a>
+            </div>
           </div>
         </div>
       </section>
